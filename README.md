@@ -10,3 +10,8 @@ Keep in mind the reduced impact on memory consumption when using local variables
 
 Arrays are fixed in size in Go, usually better to use slices. Slices are dynamic and are not copied in memory like arrays. 
 
+```
+go mod init github.com/../..
+```
+
+'flag' package is used to build CLI tools in go. 
