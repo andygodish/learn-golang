@@ -15,3 +15,12 @@ go mod init github.com/../..
 ```
 
 'flag' package is used to build CLI tools in go. 
+
+Building an http server with endpoints using the built in http package in go. 
+
+Define your own webserver and define a port for it to serve over. 
+
+Handle function (can be any type of function)
+
+Read Header values using the HandleFunc
+
