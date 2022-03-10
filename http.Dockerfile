@@ -5,7 +5,7 @@ WORKDIR /work
 FROM golang:1.17-alpine as build
 
 WORKDIR /app
-COPY ./json/* /app/
+COPY ./http/* /app/
 RUN go build -o app
 
 FROM golang:1.17-alpine as runtime
@@ -13,6 +13,5 @@ FROM golang:1.17-alpine as runtime
 WORKDIR /app
 
 COPY --from=build /app/app /app/
-COPY ./json/videos.json /app/
-CMD ./app 
-
+COPY ./http/videos.json /app/
+CMD ./app
